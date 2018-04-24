@@ -1,0 +1,3 @@
+---
+# defaults file for sivaprasadreddy.jenkins-slave
+java_version: "1.8"

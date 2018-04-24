@@ -1,0 +1,18 @@
+galaxy_info:
+  author: sivaprasadreddy
+  description: Ansible role to create an instance of Jenkins slave with Git, Java, Docker, Kubectl installed
+  company: sivalabs
+  license: license (BSD, MIT)
+  min_ansible_version: 1.2
+
+  # platforms is a list of platforms, and each platform has a name and a list of versions.
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+
+  galaxy_tags:
+    - java
+    - jenkins
+
+dependencies: []

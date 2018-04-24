@@ -1,0 +1,5 @@
+---
+
+- include: oracle-java.yml
+- include: docker.yml
+- include: docker-compose.yml
