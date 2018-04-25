@@ -1,0 +1,16 @@
+---
+
+- name: download kubectl
+  get_url:
+    url: https://storage.googleapis.com/kubernetes-release/release/v{{ kubectl_version }}/bin/linux/amd64/kubectl
+    dest: "{{ package_destination }}"
+
+- name: copy executable to /usr/local/bin
+  become: yes
+  copy:
+    src: "{{ package_destination }}/kubectl"
+    dest: /usr/local/bin/kubectl
+    remote_src: True
+    owner: root
+    group: root
+    mode: 0755

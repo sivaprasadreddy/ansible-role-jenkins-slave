@@ -8,3 +8,7 @@ docker_users: []
 install_docker_compose: true
 docker_compose_version: "1.16.1"
 docker_compose_path: /usr/local/bin/docker-compose
+
+install_kubectl: true
+kubectl_version: 1.10.1
+package_destination: /home/ubuntu
