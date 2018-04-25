@@ -1,3 +1,10 @@
 ---
 # defaults file for sivaprasadreddy.jenkins-slave
-java_version: "1.8"
+java_installer_type: "open-jdk" # open-jdk, oracle-java
+
+install_docker: true
+docker_users: []
+
+install_docker_compose: true
+docker_compose_version: "1.16.1"
+docker_compose_path: /usr/local/bin/docker-compose

@@ -1,26 +1,17 @@
 ---
 
-- name: add add-apt-repostory
-  apt: pkg=software-properties-common state=present update_cache=yes
-  become: true
-
-- name: add add-apt-repostory
-  apt: pkg=python-software-properties state=present update_cache=yes
-  become: true
-  when: ansible_distribution_release == "trusty"
-
-- name: add webupd8 ppa
+- name: Oracle Java - Add webupd8 ppa
   apt_repository: repo='ppa:webupd8team/java' update_cache=yes
 
-- name: apt-get update
+- name: Oracle Java - apt-get update
   apt: update_cache=yes
   become: true
 
-- name: auto accept oracle jdk license
+- name: Oracle Java - Auto accept oracle jdk license
   shell: echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
   become: true
 
-- name: install java8
+- name: Oracle Java - Install java8
   shell: apt-get install -y oracle-java8-installer ca-certificates
   become: true
 

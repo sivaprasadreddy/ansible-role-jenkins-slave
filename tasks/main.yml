@@ -1,5 +1,13 @@
 ---
 
+- include: open-jdk.yml
+  when: java_installer_type == 'open-jdk'
+
 - include: oracle-java.yml
+  when: java_installer_type == 'oracle-java'
+
 - include: docker.yml
+  when: install_docker
+
 - include: docker-compose.yml
+  when: install_docker_compose

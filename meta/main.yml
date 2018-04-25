@@ -1,5 +1,5 @@
 galaxy_info:
-  author: sivaprasadreddy
+  author: K Siva Prasad Reddy
   description: Ansible role to create an instance of Jenkins slave with Git, Java, Docker, Kubectl installed
   company: sivalabs
   license: license (BSD, MIT)
@@ -9,7 +9,7 @@ galaxy_info:
   platforms:
   - name: Ubuntu
     versions:
-    - all
+    - xenial
 
   galaxy_tags:
     - java
