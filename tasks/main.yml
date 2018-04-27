@@ -1,10 +1,10 @@
 ---
 
 - include: open-jdk.yml
-  when: java_installer_type == 'open-jdk'
+  when: install_java and java_installer_type == 'open-jdk'
 
 - include: oracle-java.yml
-  when: java_installer_type == 'oracle-java'
+  when: install_java and java_installer_type == 'oracle-java'
 
 - include: docker.yml
   when: install_docker

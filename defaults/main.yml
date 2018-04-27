@@ -1,5 +1,6 @@
 ---
 # defaults file for sivaprasadreddy.jenkins-slave
+install_java: true
 java_installer_type: "open-jdk" # open-jdk, oracle-java
 
 install_docker: true
