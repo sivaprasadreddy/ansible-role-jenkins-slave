@@ -13,3 +13,5 @@ docker_compose_path: /usr/local/bin/docker-compose
 install_kubectl: true
 kubectl_version: 1.10.1
 package_destination: /home/ubuntu
+
+install_ansible: false

@@ -14,3 +14,6 @@
 
 - include: kubectl.yml
   when: install_kubectl
+
+- include: ansible.yml
+  when: install_ansible
